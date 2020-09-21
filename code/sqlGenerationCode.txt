@@ -1,0 +1,92 @@
+CREATE TABLE Room (
+ roomId INT PRIMARY KEY,
+ roomName CHAR(20),
+ hasPuzzle INT NOT NULL,
+ roomDescription VARCHAR(1000),
+ helpText VARCHAR(1000),
+ connectedRoom CHAR(15),
+ connectionCommands CHAR(45)
+);
+
+
+CREATE TABLE Puzzle (
+ puzzleId INT PRIMARY KEY,
+ puzzleNeedsItem INT NOT NULL,
+ puzzleHelpText VARCHAR(1000),
+ puzzleCompletionCommand VARCHAR(1000),
+ puzzleCompletionText VARCHAR(1000),
+ description VARCHAR(1000),
+ roomId INT NOT NULL,
+ FOREIGN KEY (roomId) REFERENCES Room (roomId)
+);
+
+CREATE TABLE Item (
+ itemId INT PRIMARY KEY,
+ itemName CHAR(20),
+ itemDescription VARCHAR(1000),
+ itemUsageText VARCHAR(1000),
+ itemFailureText VARCHAR(1000),
+ initialRoomId INT,
+ FOREIGN KEY (initialRoomId) REFERENCES Room (roomId)
+);
+
+CREATE TABLE SaveFile (
+ saveName CHAR(20) PRIMARY KEY,
+ playerScore INT,
+ playerName CHAR(20) NOT NULL,
+ playerHealth INT,
+ roomId INT NOT NULL,
+ itemId INT,
+ FOREIGN KEY (roomId) REFERENCES Room (roomId),
+ FOREIGN KEY (itemId) REFERENCES Item (itemId)
+);
+
+CREATE TABLE PuzzleItem (
+ puzzleItemId INT,
+ itemId INT,
+ puzzleId INT,
+ isUsed INT NOT NULL,
+ PRIMARY KEY (itemId, puzzleId, puzzleItemId),
+ FOREIGN KEY (itemId) REFERENCES Item (itemId),
+ FOREIGN KEY (puzzleId) REFERENCES Puzzle (puzzleId)
+);
+
+CREATE TABLE PlayerPuzzleItem(
+ puzzleItemId INT,
+ saveName CHAR(20),
+ isDone INT NOT NULL,
+ PRIMARY KEY (puzzleItemId,saveName),
+ FOREIGN KEY (puzzleItemId) REFERENCES PuzzleItem (puzzleItemId),
+ FOREIGN KEY (saveName) REFERENCES PuzzleItem (saveName)
+); 
+
+CREATE TABLE PlayerItem (
+ itemId INT,
+ saveName CHAR(20),
+ inInventory INT NOT NULL,
+ roomId INT NOT NULL,
+ PRIMARY KEY (itemId, saveName),
+ FOREIGN KEY (itemId) REFERENCES Item (itemId),
+ FOREIGN KEY (saveName) REFERENCES SaveFile (saveName),
+ FOREIGN KEY (roomId) REFERENCES Room (roomId)
+);
+
+
+CREATE TABLE playerPuzzle (
+ saveName CHAR(20),
+ puzzleId INT,
+ puzzleComplete INT NOT NULL,
+ PRIMARY KEY (saveName, puzzleId),
+ FOREIGN KEY (saveName) REFERENCES SaveFile (saveName),
+ FOREIGN KEY (puzzleId) REFERENCES Puzzle (puzzleId)
+);
+
+
+CREATE TABLE playerRoom (
+ roomId INT,
+ saveName CHAR(20),
+ roomVisited INT NOT NULL,
+ PRIMARY KEY (roomId, saveName),
+ FOREIGN KEY (roomId) REFERENCES Room (roomId),
+ FOREIGN KEY (saveName) REFERENCES SaveFile (saveName)
+);

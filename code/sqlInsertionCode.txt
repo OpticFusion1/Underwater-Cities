@@ -1,0 +1,115 @@
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (1,'Bedroom', 0 , 'You are in your bedroom and you have the ability to teleport. You just watched a documentary on the
+ lost city of Atlantis and wish to teleport to as many underwater cities as possible.','You must enter the black hole of teleportation.','enter,','2,');
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (2,'Blackhole', 0 , 'You''re in the black hole and you don''t know exactly where you''re going. You have not quite mastered the art of teleportation yet. You know you
+''re headed to an underwater city but you don''t know which one.','You must choose a direction quickly before the black hole spits you out somewhere dangerous..', 'n,s,e,w,back,','3,13,7,17,1,');
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (3,'Alexandria', 0 , 'Alexandria was a city in Egypt. We have all learned about it in school. Its where Alexander the Great was from and where that huge important Library was. You get there and find that the city is still intact. You have never experienced something
+this amazing. But there''s an eerie feeling in the air. Like something isn''t right.','You must continue.','e,w,','4,2,');
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (4,'Lost Library', 0 , 'The lost library is everything you could have ever imagined. You cant smell because you''re under
+ water but if you could you know exactly what it would smell like; book pages..','Choose a direction.','e,s,w,','5,6,3,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (5,'Secret Room', 0 , 'You lean on a bookcase and it starts to move. You find yourself in a secret room.
+ The lights flicker and go out.', 'There may be something here','w,','4,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (6,'Caves', 1 , 'You see rocks and more rocks. You have entered a cave. The hear distant yelling and follow it. It''s a girl. 
+You''ve heard the voice before. Its dark and you wish you had something to provide light.', 'Solve the riddle','n,','4,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (7,'Atlantis', 0 , 'The lost city, the movie you watched since you were a kid. You''re so excited you finally get to see it. You always doubted whether it existed and now that you know it does you are glad that it does. Atlantis has this majestic
+ yet creepy feeling about it but you decide to continue in the name of exploration', 'Choose a direction','e,s,w,','8,11,2,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (8,'Shipwreck', 0 , 'You see some creepy creatures feeding on something in a corner. You decide not to investigate because you would much rather not throw up. You don''t want to stay too long because you have watched Finding Nemo and you know this is where the sharks live.
+You find a piece of bubble gum and must decide whether to pick it up or not.', 'Can gum be useful?','n,e,w,','9,10,7,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (9,'The Galley', 0 , 'The Galley is empty but you can see that it used to be a popular place to visit. You see remnants of a microphone and a stage. It seems to have been a place where people went for entertainment.
+ You''re happy to be there but know you must continue.', 'Choose a direction','s,','8,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (10,'Captains Quarters', 1 , 'You enter the captains quarters and you feel someone staring at you. You turn around quickly and find the captain
+ of the ship looking you right in the eye. You must solve his riddle before he allows you to leave..', 'Solve the riddle','w,','8,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (11,'Oyster House', 0 , 'The house is one big oyster. You lift the top shell to go inside and warm salty water hits you. You get a warm calm sensation and want to take a nap on the squishy insides. You fight the urge and follow the pearls laid on the floor.
+ You may grab one and place it in your inventory if you believe it useful.', 'Choose a direction','s,n,','12,7,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (12,'Room of Pearls', 1 , 'The room of pearls is a room where everything is made of pearls. There are peal mirrors everywhere and, in the distance, you see a purple shadow. As you move closer you realize the purple blob is Ursula. 
+She is visible in every mirror so you do not know where she is.', 'Answer the question to stay alive','n,','11,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (13,'Lost Villages', 0 , 'You enter the lost villages realm. You know this is just a
+ stepping stone leading to an abandoned underwater village.', 'Choose a direction','s,w,n,','14,15,2,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (14,'Tritons Bedroom', 1 , 'To enter king Tritons lair you must insert a key. You have never seen a key slot like this before its round and smooth.',
+ 'Insert item into the slot, may need to use more than one to make it stick','w,n,','16,13,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (15,'City of Wales', 0 , 'The city of Wales. An ancient city you have never heard of. Story is people evacuated before it was flooded.
+ So nobody died. Even so, it''s a scary place to be.', 'Choose a direction','s,e,','16,13,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (16,'Tritons Castle', 0 , 'Tritons castle. The underwater king. You see his trident hanging on the wall. You may decide to take it but 
+take it at your own risk.', 'Be careful','n,e,','15,14,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (17,'Pavlopetri', 0 , 'You teleport to an underwater city in Greece. It is an ancient city. You see fish swimming around, they have made a home of Pavlopetri. You explore further and see a shadow pass you by.
+ You turn to try and look at it but its gone.', 'Choose a direction','n,w,e,','19,18,2,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (18,'Graveyard', 0 , 'You are spooked! You feel like you are being followed. Could it be? The city has been underwater for ages.
+ You keep looking around you and you want to leave as soon as possible.', 'Choose a direction','n,e,','20,17,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (19,'Ruins', 1 , 'You see a gate and you have to choose to go through the gate or back towards where you came from. The gate is closing so you must act quick-ly. If you decide to go through the gate you must hold it open with something.', 'Choose a direction. To go forward,
+ you need something big and heavy to keep the door open','w,s,','20,17,');
+
+
+INSERT INTO Room (roomId, roomName, hasPuzzle, roomDescription, helpText, connectionCommands, connectedRoom) VALUES (20,'Haunted Tombstone', 1 , 'You go through the gate and now you see a tombstone with someone sitting on it. You approach the dark shadowy person. 
+As you get closer he stands up and you try not to scream.', 'Answer the riddle to continue','s,e,','18,19,');
+
+
+INSERT INTO Item (itemId, itemName, itemDescription, itemUsageText, itemFailureText, initialRoomId) VALUES (1,'Book', 'The book only has a few pages, each page with a highlighted word: STAY. AWAY. FROM. ATLANTIS. FOR. PURPLE. DANGER. ROAMS.', 'You flip through the pages',' What a waste of paper! ',4);
+
+INSERT INTO Item (itemId, itemName, itemDescription, itemUsageText, itemFailureText, initialRoomId) VALUES (2,'Instant light candle', 'The candle light is usually bright. You have the feeling it will light even underwater', 'You turn the light on', 'How wasteful. You don''t really need the light HERE do you?',5);
+
+INSERT INTO Item (itemId, itemName, itemDescription, itemUsageText, itemFailureText, initialRoomId) VALUES (3,'Gum', 'A simple piece of blackberry bubble gum', 'You unwrap and chew on the gum. It is delicious. Unfortunately, it is needed. You take it out of your mouth and you stick it on the indentation on the key slot', 'You are not hungry right now',8);
+ 
+INSERT INTO Item (itemId, itemName, itemDescription, itemUsageText, itemFailureText, initialRoomId) VALUES ( 4,'Pearl', 'A round flawless pearl. You can feel its perfect smoothness and it glows with a soft blue light', 'You insert the pearl into the slot. It glows violently and the door flies open', ' You admire the pearl. So beautiful, So precious, MY precious',11);
+ 
+INSERT INTO Item (itemId, itemName, itemDescription, itemUsageText, itemFailureText, initialRoomId) VALUES (5,'Triton''s Trident', 'The trident glows with a faint light and hums with power', 'You wedge the heavy metal stick in the ground wedging the gate open.', 'The trident becomes heavy in your hands and loses all its light. It doesn''t seem to like you.',16);
+ 
+
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES (1, 1 ,'Weighs', 'the scale', 'The clanging of chains falling fills the cave. â€œThank you kind stranger. You saved me!'  ,  'You see the girl clearly attached to the wall by dozens of black chains. Save me please? she asks.
+ You must answer this question to break the curse holding me here!? Which part of the mermaid weighs the most?', 6);
+ 
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES ( 2 , 0 ,'Opposite of Single', 'married', 'Hahaha, that''s right! You may pass.', 'This is my question. There is a ship called the prince that was packed
+with a record breaking 1 million people on it! Yet not a single person is on the ship. How could this be', 10);
+
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES ( 3, 0 ,'I set certain rules and I expect those rules to be obeyed!', 'king triton', 'Ursula goes silent and blinding light reflects off the pearls in the room. 
+You can''t see it directly but you think you see the afterimage of a trident. Your vision goes completely white. Slowly your vision returns. Ursula is nowhere to be seen', 'Lighting flashes at your face! You dodge to the left avoiding a bolt. Another flashes by and pulls at your shirt.
+ You fall as steam rises around you. Ursula screams, You do not know anything about me! You do not know who my brother is? She cackles in glee! He is the only one that can stop me from killing you!', 12);
+ 
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES ( 4, 0 ,' Two legs are better than one tail', 'ariel',' You know my daughter? you hear a deep voice exclaim.
+I am happy', 'Glowing text floats up from the ground asking, Who is King Tritons daughter', 13);
+ 
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES ( 5, 0 ,'under the sea, these do be','fish','His shadow disappears suddenly. A quite normal looking man stares back at you. He clears his throat.
+Sorry, I''ve had a sore throat for the past few days. Great answer by the way, when King Triton asked me that, I don''t think he knew the answer','The figure steeped in darkness asks in a gravely voice: I am alive without breath and cold as death. I am never thirsty but always drinking. What am I?',20);
+ 
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES (6, 1, 'maybe try something sticky then something round?',' ','the door swings wide open', 'a door with a spherical lock is apparent',14);
+
+INSERT INTO Puzzle (puzzleId,puzzleNeedsItem,puzzleHelpText,puzzleCompletionCommand,puzzleCompletionText,description,roomId) VALUES (7, 1, 'your''e gonna need to wedge something strong in that gap',' ' ,'the gate catches before it shuts, and you make it through','a gate on the other side of the room, closes each time you approach it, you should find something to keep it open.',19); 
+
+INSERT INTO PuzzleItem (itemId, puzzleId, isUsed, puzzleItemId) VALUES (2,1,0,1);
+
+INSERT INTO PuzzleItem (itemId, puzzleId, isUsed, puzzleItemId) VALUES (3,6,1,2);
+
+INSERT INTO PuzzleItem (itemId, puzzleId, isUsed, puzzleItemId) VALUES (4,6,1,3);
+
+INSERT INTO PuzzleItem (itemId, puzzleId, isUsed, puzzleItemId) VALUES (5,7,1,4);
